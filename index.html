@@ -14,6 +14,11 @@
         }
         h1, h2, h3, h4, h5, h6, img {
             width: 100%;
+            text-align: center;
+        }
+        table, td {
+            margin: 0;
+            border: none;
         }
         #newletter-name {
             text-transform: uppercase;
@@ -60,6 +65,28 @@
             font-weight: bold;
             padding-top: 4px;
         }
+        .page-break{
+            display: block;
+            border-top: dashed 1px #CCC;
+            height: 1px;
+            margin: 20px 0 10px 0;
+            page-break-after: always;
+        }
+        @media print {
+            .page-break {
+                border: none;
+                margin: 0;
+            }
+        }
+        .times-and-dates {
+            margin: 6px 0;
+        }
+        .times-and-dates tr td {
+            font-weight: bold;
+        }
+        .times-and-dates tr td:first-child {
+            width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -71,117 +98,184 @@
         Awareness Week
     </h1>
     <table id="events-table">
-        <tr>
-            <td id="eventa-table__events">
-                <ul>
-                    <li>
-                        <dl>
-                            <dt>Tuesday 4 April 10am-1pm</dt>
-                            <dd>
-                                Gurdwara - Parkinson’s Information morning
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Friday 7 April 11am-3pm</dt>
-                            <dd>A display at Little Eaton Garden Centre.
-                                Any volunteers to share the day would help. Peter Shaffery
-                                <br />
-                                <em>email (pgs1937@hotmail.com) or (01332 832777)</em>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Friday 7 April</dt>
-                            <dd>
-                                A Treats Tombola, with an Information stand is to be held on the Main Corridor of London Road Community Hospital. Please let  Frank or Janet  Smith know  if you can help with cakes, buns  or have  items to donate.
-                            </dd>
+        <tbody>
+            <tr>
+                <td id="eventa-table__events">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>Tuesday 4 April 10am-1pm</dt>
+                                <dd>
+                                    Gurdwara - Parkinson’s Information morning
+                                </dd>
                             </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Wednesday 12 April</dt>
-                            <dd>
-                                Cycle Day at Markeaton Park 10am to 1pm. This should be lots of fun, not least because Cycle Derby will be available to provide lots of bikes…..tandems ,three-wheeled, two-wheeled conventional etc. All welcome. We meet at the car park at MacDonalds end and the  bike sheds are behind the railway shed.
-                                The Ashbourne Branch have organised some cycling days at Markeaton Park in the summer and have invited any of our members to join them They like to cycle to the coffee shop, have a coffee and then cycle back again or you can do your own thing and take off round the park on a bike by yourself! Dates are 10 May, 7 June, 5 July  10.30am -12pm
-                                <em>Any queries 01332 832777.</em>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Saturday 22 April</dt>
-                            <dd>
-                                A collection outside Tesco, Mickleover store, for Parkinson’s Derby Branch. We need volunteers to put their names down for one hour slots. Usually two people are there at a time.
-                                <em>If you can help please email Martyn Palmer: martyn.palmer01@outlook.com</em>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Sunday 23 April Calke Abbey Walk</dt>
-                            <dd>
-                                You can choose from two routes: a gentle 2 mile stroll around the woods and parkland of Calke Abbey or a more challenging 9 mile walk that takes you alongside Staunton Harold Reservoir and through the village of Ticknall. Volunteers also needed to help on the day
-                                <em>Contact 020 7963 3912 or email fundraising@parkinsons.org.uk</em>
-                            </dd>
-                        </dl>
-                    </li>
-                </ul>
-            </td>
-            <td id="events-table__this-month">
-                <h5 id="events-table__this-month__title">This Month</h5>
-                <dl>
-                    <dt>Branch meeting - Tuesday 4th April</dt>
-                    <dd>
-                        Sounds Harmonious -the harmonica  duo will entertain us
-                        <b>2-4 pm</b> Aston Court Hotel-private access to the York suite from the car park  at the rear.
-                        Lunch available pre meeting at Antibo’s (next door to Aston Court) Special price of £7.95 for two courses.
-                        <em>Book with Peter Shaffery (01332 832777) or just turn up. Pay the Restaurant after the meal. Open at 12.00pm</em>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>sQuad meeting 1st April from 11.00-12.30</dt>
-                    <dd>
-                        St Peter's Church in the city centre entrance opposite BHS. (in Function Room on  first floor)
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>sQuad Curry night  3rd Tuesday of every month</dt>
-                    <dd>
-                        At The Flowerpot
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>Saturday Coffee Morning 8th April 10-12 noon</dt>
-                    <dd>
-                        Sparcs clinic  Left of Main Entrance, London Road Community Hospital
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>Singers Thursdays 1-3pm</dt>
-                    <dd>
-                        Chester Green Community Hall
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>Carers 12 April 2.30pm</dt>
-                    <dd>
-                        Bennett’s Tea Rooms
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>Hydrotherapy pool Swimming Tuesdays 12.30 to 1.30pm</dt>
-                    <dd>
-                        Royal Derby Hospital
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>Tai Chi  Fridays 10-11am</dt>
-                </dl>
-            </td>
-        </tr>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Friday 7 April 11am-3pm</dt>
+                                <dd>A display at Little Eaton Garden Centre.
+                                    Any volunteers to share the day would help. Peter Shaffery
+                                    <br />
+                                    <em>email (pgs1937@hotmail.com) or (01332 832777)</em>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Friday 7 April</dt>
+                                <dd>
+                                    A Treats Tombola, with an Information stand is to be held on the Main Corridor of London Road Community Hospital. Please let  Frank or Janet  Smith know  if you can help with cakes, buns  or have  items to donate.
+                                </dd>
+                                </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Wednesday 12 April</dt>
+                                <dd>
+                                    Cycle Day at Markeaton Park 10am to 1pm. This should be lots of fun, not least because Cycle Derby will be available to provide lots of bikes…..tandems ,three-wheeled, two-wheeled conventional etc. All welcome. We meet at the car park at MacDonalds end and the  bike sheds are behind the railway shed.
+                                    The Ashbourne Branch have organised some cycling days at Markeaton Park in the summer and have invited any of our members to join them They like to cycle to the coffee shop, have a coffee and then cycle back again or you can do your own thing and take off round the park on a bike by yourself! Dates are 10 May, 7 June, 5 July  10.30am -12pm
+                                    <em>Any queries 01332 832777.</em>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Saturday 22 April</dt>
+                                <dd>
+                                    A collection outside Tesco, Mickleover store, for Parkinson’s Derby Branch. We need volunteers to put their names down for one hour slots. Usually two people are there at a time.
+                                    <em>If you can help please email Martyn Palmer: martyn.palmer01@outlook.com</em>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Sunday 23 April Calke Abbey Walk</dt>
+                                <dd>
+                                    You can choose from two routes: a gentle 2 mile stroll around the woods and parkland of Calke Abbey or a more challenging 9 mile walk that takes you alongside Staunton Harold Reservoir and through the village of Ticknall. Volunteers also needed to help on the day
+                                    <em>Contact 020 7963 3912 or email fundraising@parkinsons.org.uk</em>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </td>
+                <td id="events-table__this-month">
+                    <h5 id="events-table__this-month__title">This Month</h5>
+                    <dl>
+                        <dt>Branch meeting - Tuesday 4th April</dt>
+                        <dd>
+                            Sounds Harmonious -the harmonica  duo will entertain us
+                            <b>2-4 pm</b> Aston Court Hotel-private access to the York suite from the car park  at the rear.
+                            Lunch available pre meeting at Antibo’s (next door to Aston Court) Special price of £7.95 for two courses.
+                            <em>Book with Peter Shaffery (01332 832777) or just turn up. Pay the Restaurant after the meal. Open at 12.00pm</em>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>sQuad meeting 1st April from 11.00-12.30</dt>
+                        <dd>
+                            St Peter's Church in the city centre entrance opposite BHS. (in Function Room on  first floor)
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>sQuad Curry night  3rd Tuesday of every month</dt>
+                        <dd>
+                            At The Flowerpot
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Saturday Coffee Morning 8th April 10-12 noon</dt>
+                        <dd>
+                            Sparcs clinic  Left of Main Entrance, London Road Community Hospital
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Singers Thursdays 1-3pm</dt>
+                        <dd>
+                            Chester Green Community Hall
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Carers 12 April 2.30pm</dt>
+                        <dd>
+                            Bennett’s Tea Rooms
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Hydrotherapy pool Swimming Tuesdays 12.30 to 1.30pm</dt>
+                        <dd>
+                            Royal Derby Hospital
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Tai Chi  Fridays 10-11am</dt>
+                    </dl>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <h3>Derby Self-Management Group</h3>
+                    <dl>
+                        <dd>
+                            <i>A Path through Parkinson’s</i> is a self-management programme designed to help you think about and plan how you want to navigate your life with Parkinson’s. It brings 8-12 people with <a href="http://www.parkinsons.org.uk/content/about-parkinsons">Parkinson's</a>,
+                            partners and <a href="http://www.parkinsons.org.uk/content/caring-someone-parkinsons">carers</a> together for six sessions of discussion, activity and self-reflection.  It is free to attend and groups are led by trained volunteer facilitators with first-hand experience of Parkinson’s.
+                            Find out more on the Parkinson’s UK Website <a href="http://www.parkinsons.org.uk/content/self-management-programme-path-through-parkinsons">parkinsons.org.uk/selfmanagement</a> where there are short films to tell you more and an online registration form.
+                            <table class="times-and-dates">
+                                <tbody>
+                                <tr>
+                                    <td>Dates:</td>
+                                    <td>26 April, 3 May, 10 May, 17 May, 24 May & 31 May</td>
+                                </tr>
+                                <tr>
+                                    <td>Time:</td>
+                                    <td>10:30am – 1:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Venue:</td>
+                                    <td>YMCA Derbyshire, London Road, Derby DE24 8UT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            For more information or to book a place people just need to email <a href="mailTo:selfmanagement@parkinsons.org.uk">selfmanagement@parkinsons.org.uk</a> or call 020 7963 3924.
+                        </dd>
+                    </dl>
+                    <br />
+                    <h3>Severn Valley Railway Trip</h3>
+                    <dl>
+                        <dd>
+                            The trip is now booked up. Just a few pickup details for you:
+                            There will be one  pick up point, at the  far end of the Derby bus station where the coaches arrive,10.15am ready to leave at 10.30am.Remember there is no meal included in the price, but  you can buy refreshments on the train, as well as in Bridgnorth itself.
+                            <table class="times-and-dates">
+                                    <tbody>
+                                    <tr>
+                                        <td>Date:</td>
+                                        <td>Monday 15  May</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                    <br />
+                    <h3>An opportunity to sing</h3>
+                    <dl>
+                        <dd>
+                            Derby-based Sinfonia Viva, the East Midlands’ only professional orchestra, is launching a new initiative to bring together local people who are carers for family and friends.                                                                                                                       The new Carers’ Choir will be open to people across Derbyshire and Nottinghamshire who will come together once a month to enjoy music and potentially have opportunities for performing.                                                                            The choir is  free to join. It will be led by award-winning choral conductor David Lawrence who will introduce a selection of choral favourites, songs from popular shows and pop favourites.
+                            For more information, please contact Andrew Nesbitt at Sinfonia Viva, Tel: 01332 207602 or email <a href="mailTo:andrew@vivaorch.co.uk">andrew@vivaorch.co.uk</a>
+                        </dd>
+                    </dl>
+                    <br />
+                    <h3>Coming up: 7 October Symposium 2017  Royal Derby Hospital</h3>
+                    <dl>
+                        The organisers want you to suggest topics you may like to explore at this event. Contact Specialist Nurse Lisa Brown or
+                        Brian Greaves <a href="mailTo:b.greaves210@btinternet.com">b.greaves210@btinternet.com</a>
+                        More details to follow nearer the time
+                    </dl>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
