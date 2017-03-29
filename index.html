@@ -1,581 +1,584 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Derby Parkinsons Newsletter</title>
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, SansSerif;
-            font-size: 13px;
-            width: 16cm;
-            margin: 10px auto;
-            text-align: justify;
+
+    <style type="text/css">
+        body{
+            background-color:#FFF;
+            color:#333;
+            font-family:Arial, Helvetica, SansSerif;
+            font-size:12px;
+            width:16cm;
+            margin:10px auto;
+            text-align:justify;
         }
-        h1, h2, h3, h4, h5, h6, img {
-            width: 100%;
-            text-align: center;
+        h1,h2,h3,h4,h5,h6,img{
+            width:100%;
+            text-align:center;
         }
-        table, td {
-            margin: 0;
-            border: none;
-            border-collapse: collapse;
-            cell-spacing: 0;
-            padding: 0;
+        table,td{
+            margin:0;
+            border:none;
+            border-collapse:collapse;
+            cell-spacing:0;
+            padding:0;
         }
-        #newletter-name {
-            text-transform: uppercase;
-            text-align: center;
+        #newletter-name{
+            text-transform:uppercase;
+            text-align:center;
         }
-        #title {
-            text-align: center;
+        #title{
+            text-align:center;
         }
-        ul {
-            margin-top: 0;
-            padding-left: 22px;
+        ul{
+            margin-top:0;
+            padding-left:22px;
         }
-        li dl:first-child {
-            margin-top: 0;
+        li dl:first-child{
+            margin-top:0;
         }
-        table {
-            width: 100%;
+        table{
+            width:100%;
         }
         table td{
-            vertical-align: top;
+            vertical-align:top;
         }
-        #eventa-table__events {
-            padding-right: 6px;
+        #eventa-table__events{
+            padding-right:6px;
         }
-        #events-table__this-month {
-            background-color: #cbebfb;
-            width: 6.5cm;
-            vertical-align: top;
+        #events-table__this-month{
+            background-color:#cbebfb;
+            width:6.5cm;
+            vertical-align:top;
         }
-        #events-table__this-month dl {
-            padding: 0 4px;
+        #events-table__this-month dl{
+            padding:0 4px;
         }
-        #events-table__this-month__title {
-            background-color: #1daeed;
-            margin: 0;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 16px;
-            text-transform: uppercase;
+        #events-table__this-month__title{
+            background-color:#1daeed;
+            margin:0;
+            padding:10px 0;
+            text-align:center;
+            font-size:16px;
+            text-transform:uppercase;
         }
-        dt {
-            font-weight: bold;
-            padding-bottom: 4px;
+        dt{
+            font-weight:bold;
+            padding-bottom:4px;
         }
-        dd {
-           margin: 0;
+        dd{
+            margin:0;
         }
-        dd em {
-            text-align: left;
-            font-weight: bold;
-            padding-top: 4px;
+        dd em{
+            text-align:left;
+            font-weight:bold;
+            padding-top:4px;
         }
         .page-break{
-            display: block;
-            border-top: dashed 1px #CCC;
-            height: 1px;
-            margin: 20px 0 10px 0;
-            page-break-after: always;
+            display:block;
+            border-top:dashed 1px #CCC;
+            height:1px;
+            margin:20px 0 10px 0;
+            page-break-after:always;
         }
-        @media print {
-            .page-break {
-                border: none;
-                margin: 0;
+        @media print{
+            .page-break{
+                border:none;
+                margin:0;
             }
+
+        }		.times-and-dates{
+                     margin:6px 0;
+                 }
+        .times-and-dates tr td{
+            font-weight:bold;
         }
-        .times-and-dates {
-            margin: 6px 0;
+        .times-and-dates tr td:first-child{
+            width:100px;
         }
-        .times-and-dates tr td {
-            font-weight: bold;
-        }
-        .times-and-dates tr td:first-child {
-            width: 100px;
-        }
-        .apr-17-p3-p0 {
-            floaT: right;
-            width: 4.82cm;
-            height: 6.3cm;
-            padding-left: 10px;
-            padding-top: 10px;
+        .apr-17-p3-p0{
+            floaT:right;
+            width:4.82cm;
+            height:6.3cm;
+            padding-left:10px;
+            padding-top:10px;
         }
         .photo-wall{
-            margin: 10px 0;
+            margin:10px 0;
         }
-        .photo-wall-photo {
-            height: 2.06cm;
-            padding: 0;
-            margin: 0;
+        .photo-wall-photo{
+            height:2.06cm;
+            padding:0;
+            margin:0;
         }
-        .boxed {
-            border: solid 1px #333;
-            padding: 0 6px;
+        .boxed{
+            border:solid 1px #333;
+            padding:0 6px;
         }
-        .contact-table td {
-            padding: 0 4px;
+        .contact-table td{
+            padding:0 4px;
         }
-        .contact-table td h3 {
-            margin-top: 0;
+        .contact-table td h3{
+            margin-top:0;
         }
-        .contact-table td:first-child {
-            width: 5.5cm;
+        .contact-table td:first-child{
+            width:5.5cm;
         }
-        .contact-table td:nth-child(2) {
-            width: 5.5cm;
+        .contact-table td:nth-child(2){
+            width:5.5cm;
         }
-        em.highlight {
-            color: darkred;
+        em.highlight{
+            color:darkred;
         }
-    </style>
-</head>
+    </style></head>
 <body>
-    <img src="Header.png" alt="Derby Parkinsons Group" />
-    <h3 id="newletter-name">
-        Derby and District Branch - April 2017
-    </h3>
-    <h1 id="title">
-        Awareness Week
-    </h1>
-    <table id="events-table">
-        <tbody>
-            <tr>
-                <td id="eventa-table__events">
-                    <ul>
-                        <li>
-                            <dl>
-                                <dt>Sunday 2nd April 10am-1pm</dt>
-                                <dd>
-                                    Gurdwara - Parkinson’s Information morning
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>Friday 7th April 11am-3pm</dt>
-                                <dd>A display at Little Eaton Garden Centre.
-                                    Any volunteers to share the day would help. Peter Shaffery
-                                    <br />
-                                    <em>email (pgs1937@hotmail.com) or (01332 832777)</em>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>Friday 7th April</dt>
-                                <dd>
-                                    A Treats Tombola, with an Information stand is to be held on the Main Corridor of London Road Community Hospital. Please let  Frank or Janet  Smith know  if you can help with cakes, buns  or have  items to donate.
-                                </dd>
-                                </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>Wednesday 12th April</dt>
-                                <dd>
-                                    Cycle Day at Markeaton Park 10am to 1pm. This should be lots of fun, not least because Cycle Derby will be available to provide lots of bikes…..tandems ,three-wheeled, two-wheeled conventional etc. All welcome. We meet at the car park at MacDonalds end and the  bike sheds are behind the railway shed.
-                                    The Ashbourne Branch have organised some cycling days at Markeaton Park in the summer and have invited any of our members to join them They like to cycle to the coffee shop, have a coffee and then cycle back again or you can do your own thing and take off round the park on a bike by yourself! Dates are 10 May, 7 June, 5 July  10.30am -12pm
-                                    <em>Any queries 01332 832777.</em>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>Saturday 22nd April</dt>
-                                <dd>
-                                    A collection outside Tesco, Mickleover store, for Parkinson’s Derby Branch. We need volunteers to put their names down for one hour slots. Usually two people are there at a time.
-                                    <em>If you can help please email Martyn Palmer: martyn.palmer01@outlook.com</em>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>Sunday 23rd April Calke Abbey Walk</dt>
-                                <dd>
-                                    You can choose from two routes: a gentle 2 mile stroll around the woods and parkland of Calke Abbey or a more challenging 9 mile walk that takes you alongside Staunton Harold Reservoir and through the village of Ticknall. Volunteers also needed to help on the day
-                                    <em>Contact 020 7963 3912 or email fundraising@parkinsons.org.uk</em>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </td>
-                <td id="events-table__this-month">
-                    <h5 id="events-table__this-month__title">This Month</h5>
+<img src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/97059821-e5cb-4a00-b564-c7288e107a06.png" alt="Derby Parkinsons Group">
+<h3 id="newletter-name">
+    Derby and District Branch - April 2017
+</h3>
+<h1 id="title">
+    Awareness Week
+</h1>
+<table id="events-table">
+    <tbody>
+    <tr>
+        <td id="eventa-table__events">
+            <ul>
+                <li>
                     <dl>
-                        <dt>Branch meeting - Tuesday 4th April</dt>
+                        <dt>Sunday 2nd April 10am-1pm</dt>
                         <dd>
-                            Sounds Harmonious -the harmonica  duo will entertain us
-                            <b>2-4 pm</b> Aston Court Hotel-private access to the York suite from the car park  at the rear.
-                            Lunch available pre meeting at Antibo’s (next door to Aston Court) Special price of £7.95 for two courses.
-                            <em>Book with Peter Shaffery (01332 832777) or just turn up. Pay the Restaurant after the meal. Open at 12.00pm</em>
+                            Gurdwara - Parkinson’s Information morning
                         </dd>
                     </dl>
+                </li>
+                <li>
                     <dl>
-                        <dt>sQuad meeting 1st April from 11.00-12.30</dt>
-                        <dd>
-                            St Peter's Church in the city centre entrance opposite BHS. (in Function Room on  first floor)
+                        <dt>Friday 7th April 11am-3pm</dt>
+                        <dd>A display at Little Eaton Garden Centre.
+                            Any volunteers to share the day would help. Peter Shaffery
+                            <br>
+                            <em>email (pgs1937@hotmail.com) or (01332 832777)</em>
                         </dd>
                     </dl>
+                </li>
+                <li>
                     <dl>
-                        <dt>sQuad Curry night  3rd Tuesday of every month</dt>
+                        <dt>Friday 7th April</dt>
                         <dd>
-                            At The Flowerpot
+                            A Treats Tombola, with an Information stand is to be held on the Main Corridor of London Road Community Hospital. Please let  Frank or Janet  Smith know  if you can help with cakes, buns  or have  items to donate.
                         </dd>
                     </dl>
+                </li>
+                <li>
                     <dl>
-                        <dt>Saturday Coffee Morning 8th April 10-12 noon</dt>
+                        <dt>Wednesday 12th April</dt>
                         <dd>
-                            Sparcs clinic  Left of Main Entrance, London Road Community Hospital
+                            Cycle Day at Markeaton Park 10am to 1pm. This should be lots of fun, not least because Cycle Derby will be available to provide lots of bikes…..tandems ,three-wheeled, two-wheeled conventional etc. All welcome. We meet at the car park at MacDonalds end and the  bike sheds are behind the railway shed.
+                            The Ashbourne Branch have organised some cycling days at Markeaton Park in the summer and have invited any of our members to join them They like to cycle to the coffee shop, have a coffee and then cycle back again or you can do your own thing and take off round the park on a bike by yourself! Dates are 10 May, 7 June, 5 July  10.30am -12pm
+                            <em>Any queries 01332 832777.</em>
                         </dd>
                     </dl>
+                </li>
+                <li>
                     <dl>
-                        <dt>Singers Thursdays 1-3pm</dt>
+                        <dt>Saturday 22nd April</dt>
                         <dd>
-                            Chester Green Community Hall
+                            A collection outside Tesco, Mickleover store, for Parkinson’s Derby Branch. We need volunteers to put their names down for one hour slots. Usually two people are there at a time.
+                            <em>If you can help please email Martyn Palmer: martyn.palmer01@outlook.com</em>
                         </dd>
                     </dl>
+                </li>
+                <li>
                     <dl>
-                        <dt>Carers 12 April 2.30pm</dt>
+                        <dt>Sunday 23rd April Calke Abbey Walk</dt>
                         <dd>
-                            Bennett’s Tea Rooms
+                            You can choose from two routes: a gentle 2 mile stroll around the woods and parkland of Calke Abbey or a more challenging 9 mile walk that takes you alongside Staunton Harold Reservoir and through the village of Ticknall. Volunteers also needed to help on the day
+                            <em>Contact 020 7963 3912 or email fundraising@parkinsons.org.uk</em>
                         </dd>
                     </dl>
-                    <dl>
-                        <dt>Hydrotherapy pool Swimming Tuesdays 12.30 to 1.30pm</dt>
-                        <dd>
-                            Royal Derby Hospital
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Tai Chi  Fridays 10-11am</dt>
-                    </dl>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="page-break"></div>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <h3>Derby Self-Management Group</h3>
-                    <dl>
-                        <dd>
-                            <i>A Path through Parkinson’s</i> is a self-management programme designed to help you think about and plan how you want to navigate your life with Parkinson’s. It brings 8-12 people with <a href="http://www.parkinsons.org.uk/content/about-parkinsons">Parkinson's</a>,
-                            partners and <a href="http://www.parkinsons.org.uk/content/caring-someone-parkinsons">carers</a> together for six sessions of discussion, activity and self-reflection.  It is free to attend and groups are led by trained volunteer facilitators with first-hand experience of Parkinson’s.
-                            Find out more on the Parkinson’s UK Website <a href="http://www.parkinsons.org.uk/content/self-management-programme-path-through-parkinsons">parkinsons.org.uk/selfmanagement</a> where there are short films to tell you more and an online registration form.
-                            <table class="times-and-dates">
-                                <tbody>
-                                <tr>
-                                    <td>Dates:</td>
-                                    <td>26 April, 3 May, 10 May, 17 May, 24 May & 31 May</td>
-                                </tr>
-                                <tr>
-                                    <td>Time:</td>
-                                    <td>10:30am – 1:00pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Venue:</td>
-                                    <td>YMCA Derbyshire, London Road, Derby DE24 8UT</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            For more information or to book a place people just need to email <a href="mailTo:selfmanagement@parkinsons.org.uk">selfmanagement@parkinsons.org.uk</a> or call 020 7963 3924.
-                        </dd>
-                    </dl>
-                    <br />
-                    <h3>Severn Valley Railway Trip</h3>
-                    <dl>
-                        <dd>
-                            The trip is now booked up. Just a few pickup details for you:
-                            There will be one  pick up point, at the  far end of the Derby bus station where the coaches arrive,10.15am ready to leave at 10.30am.Remember there is no meal included in the price, but  you can buy refreshments on the train, as well as in Bridgnorth itself.
-                            <table class="times-and-dates">
-                                    <tbody>
-                                    <tr>
-                                        <td>Date:</td>
-                                        <td>Monday 12th June</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </dd>
-                    </dl>
-                    <br />
-                    <h3>An opportunity to sing</h3>
-                    <dl>
-                        <dd>
-                            Derby-based Sinfonia Viva, the East Midlands’ only professional orchestra, is launching a new initiative to bring together local people who are carers for family and friends.                                                                                                                       The new Carers’ Choir will be open to people across Derbyshire and Nottinghamshire who will come together once a month to enjoy music and potentially have opportunities for performing.                                                                            The choir is  free to join. It will be led by award-winning choral conductor David Lawrence who will introduce a selection of choral favourites, songs from popular shows and pop favourites.
-                            For more information, please contact Andrew Nesbitt at Sinfonia Viva, Tel: 01332 207602 or email <a href="mailTo:andrew@vivaorch.co.uk">andrew@vivaorch.co.uk</a>
-                        </dd>
-                    </dl>
-                    <br />
-                    <h3>Coming up: 7 October Symposium 2017  Royal Derby Hospital</h3>
-                    <dl>
-                        The organisers want you to suggest topics you may like to explore at this event. Contact Specialist Nurse Lisa Brown or
-                        Brian Greaves <a href="mailTo:b.greaves210@btinternet.com">b.greaves210@btinternet.com</a>
-                        More details to follow nearer the time
-                    </dl>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="page-break"></div>
-    <h3>Feeling creative?</h3>
-    <dl>
-        <dt>
-            <img class="apr-17-p3-p0" src="/p3-photo.png" />
-        </dt>
-        <dd>
-            In partnership with 64 Million Artists Derby Parkinson’s branch are offering a free creative project for anyone wanting to get involved.
-            Creativity can help keep your mind active, improve your wellbeing and support you to make good connections with people. It’s also fun, easy to do, and something that can be designed around what you want to do or learn. This project will be part of an East Midlands wide initiative to get older people taking part in creative activities, and part of a national project to unlock the creativity in everyone.
-            The group will meet weekly and be set different creative tasks and challenges to complete. These will always be fun, free to do and will involve lots of different kinds of things (drawing, writing, making, thinking, talking etc) so whatever you enjoy there will be something to suit you. We’ll also be encouraging you to learn from each other, and bring ideas to share. Throughout the week you can then (if you like) also pick up extra little challenges to do  at home or with friends or family, they will only take 10 or 15 mins and are completely optional, but they’re a way of practising your creativity throughout the week. We’ll be encouraging groups to also post about what they’ve been doing on the projects website, to share with friends and family or the wider world ,if they want to.
+                </li>
+            </ul>
+        </td>
+        <td id="events-table__this-month">
+            <h5 id="events-table__this-month__title">This Month</h5>
+            <dl>
+                <dt>Branch meeting - Tuesday 4th April</dt>
+                <dd>
+                    Sounds Harmonious -the harmonica  duo will entertain us
+                    <b>2-4 pm</b> Aston Court Hotel-private access to the York suite from the car park  at the rear.
+                    Lunch available pre meeting at Antibo’s (next door to Aston Court) Special price of £7.95 for two courses.
+                    <em>Book with Peter Shaffery (01332 832777) or just turn up. Pay the Restaurant after the meal. Open at 12.00pm</em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>sQuad meeting 1st April from 11.00-12.30</dt>
+                <dd>
+                    St Peter's Church in the city centre entrance opposite BHS. (in Function Room on  first floor)
+                </dd>
+            </dl>
+            <dl>
+                <dt>sQuad Curry night  3rd Tuesday of every month</dt>
+                <dd>
+                    At The Flowerpot
+                </dd>
+            </dl>
+            <dl>
+                <dt>Saturday Coffee Morning 8th April 10-12 noon</dt>
+                <dd>
+                    Sparcs clinic  Left of Main Entrance, London Road Community Hospital
+                </dd>
+            </dl>
+            <dl>
+                <dt>Singers Thursdays 1-3pm</dt>
+                <dd>
+                    Chester Green Community Hall
+                </dd>
+            </dl>
+            <dl>
+                <dt>Carers 12th April 2.30pm</dt>
+                <dd>
+                    Bennett’s Tea Rooms
+                </dd>
+            </dl>
+            <dl>
+                <dt>Hydrotherapy pool Swimming Tuesdays 12.30 to 1.30pm</dt>
+                <dd>
+                    Royal Derby Hospital
+                </dd>
+            </dl>
+            <dl>
+                <dt>Tai Chi  Fridays 10-11am</dt>
+            </dl>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div class="page-break"></div>
+<table>
+    <tbody>
+    <tr>
+        <td>
+            <h3>Derby Self-Management Group</h3>
+            <dl>
+                <dd>
+                    <i>A Path through Parkinson’s</i> is a self-management programme designed to help you think about and plan how you want to navigate your life with Parkinson’s. It brings 8-12 people with <a href="http://www.parkinsons.org.uk/content/about-parkinsons">Parkinson's</a>,
+                    partners and <a href="http://www.parkinsons.org.uk/content/caring-someone-parkinsons">carers</a> together for six sessions of discussion, activity and self-reflection.  It is free to attend and groups are led by trained volunteer facilitators with first-hand experience of Parkinson’s.
+                    Find out more on the Parkinson’s UK Website <a href="http://www.parkinsons.org.uk/content/self-management-programme-path-through-parkinsons">parkinsons.org.uk/selfmanagement</a> where there are short films to tell you more and an online registration form.
+                    <table class="times-and-dates">
+                        <tbody>
+                        <tr>
+                            <td>Dates:</td>
+                            <td>26th April, 3rd May, 10th May, 17th May, 24th May & 31st May</td>
+                        </tr>
+                        <tr>
+                            <td>Time:</td>
+                            <td>10:30am – 1:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Venue:</td>
+                            <td>YMCA Derbyshire, London Road, Derby DE24 8UT</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    For more information or to book a place people just need to email <a>selfmanagement@parkinsons.org.uk</a> or call 020 7963 3924.
+                </dd>
+            </dl>
+            <br>
+            <h3>Severn Valley Railway Trip</h3>
+            <dl>
+                <dd>
+                    The trip is now booked up. Just a few pickup details for you:
+                    There will be one  pick up point, at the  far end of the Derby bus station where the coaches arrive,10.15am ready to leave at 10.30am.Remember there is no meal included in the price, but  you can buy refreshments on the train, as well as in Bridgnorth itself.
+                    <table class="times-and-dates">
+                        <tbody>
+                        <tr>
+                            <td>Date:</td>
+                            <td>Monday 12th June</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </dd>
+            </dl>
+            <br>
+            <h3>An opportunity to sing</h3>
+            <dl>
+                <dd>
+                    Derby-based Sinfonia Viva, the East Midlands’ only professional orchestra, is launching a new initiative to bring together local people who are carers for family and friends.                                                                                                                       The new Carers’ Choir will be open to people across Derbyshire and Nottinghamshire who will come together once a month to enjoy music and potentially have opportunities for performing.                                                                            The choir is  free to join. It will be led by award-winning choral conductor David Lawrence who will introduce a selection of choral favourites, songs from popular shows and pop favourites.
+                    For more information, please contact Andrew Nesbitt at Sinfonia Viva, Tel: 01332 207602 or email <a>andrew@vivaorch.co.uk</a>
+                </dd>
+            </dl>
+            <br>
+            <h3>Coming up: 7th October Symposium 2017  Royal Derby Hospital</h3>
+            <dl>
+                The organisers want you to suggest topics you may like to explore at this event. Contact Specialist Nurse Lisa Brown or
+                Brian Greaves <a>b.greaves210@btinternet.com</a>
+                More details to follow nearer the time
+            </dl>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div class="page-break"></div>
+<h3>Feeling creative?</h3>
+<dl>
+    <dt>
+        <img class="apr-17-p3-p0" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/c54e7809-f590-46e3-9c08-0bb7cb468823.png">
+    </dt>
+    <dd>
+        In partnership with 64 Million Artists Derby Parkinson’s branch are offering a free creative project for anyone wanting to get involved.
+        Creativity can help keep your mind active, improve your wellbeing and support you to make good connections with people. It’s also fun, easy to do, and something that can be designed around what you want to do or learn. This project will be part of an East Midlands wide initiative to get older people taking part in creative activities, and part of a national project to unlock the creativity in everyone.
+        The group will meet weekly and be set different creative tasks and challenges to complete. These will always be fun, free to do and will involve lots of different kinds of things (drawing, writing, making, thinking, talking etc) so whatever you enjoy there will be something to suit you. We’ll also be encouraging you to learn from each other, and bring ideas to share. Throughout the week you can then (if you like) also pick up extra little challenges to do  at home or with friends or family, they will only take 10 or 15 mins and are completely optional, but they’re a way of practising your creativity throughout the week. We’ll be encouraging groups to also post about what they’ve been doing on the projects website, to share with friends and family or the wider world ,if they want to.
 
-            Although the project is being offered to the Parkinson’s group - it is open to anyone so if you’d like to bring friends or family members along too that’s fine. The sessions will be taking place weekly on
-            <em>Mondays from 10.30 -12pm in the Aston Court Hotel</em>. The first session is <em>15 May</em>.
-            <br/>
-            <table class="photo-wall">
-                <tr>
-                    <td>
-                        <img class="photo-wall-photo apr-17-p3-p1" src="/p3-photo-1.png" />
-                    </td>
-                    <td>
-                        <img class="photo-wall-photo apr-17-p3-p2" src="/p3-photo-2.png" />
-                    </td>
-                    <td>
-                        <img class="photo-wall-photo apr-17-p3-p3" src="/p3-photo-3.png" />
-                    </td>
-                    <td>
-                        <img class="photo-wall-photo apr-17-p3-p4" src="/p3-photo-4.png" />
-                    </td>
-                    <td>
-                        <img class="photo-wall-photo apr-17-p3-p5" src="/p3-photo-5.png" />
-                    </td>
-                    <td>
-                        <img class="photo-wall-photo apr-17-p3-p6" src="/p3-photo-6.png" />
-                    </td>
-                    <td>
-                       <img class="photo-wall-photo apr-17-p3-p7" src="/p3-photo-7.png" />
-                    </td>
-                </tr>
-            </table>
-        </dd>
-    </dl>
-    <h3>Derby Shining Stars</h3>
-    <dl>
-        <dd>
-            We’re delighted to announce the finalists for the UK Parkinson’s Excellence Network Awards – the Awards recognise and celebrate outstanding health and social care services that make a difference to people affected by Parkinson's.
-            The Excellence Network Awards ceremony was held 6 March, hosted by renowned journalist and broadcaster John Stapleton.
-            There were highly commended mentions for the Parkinson's Service at Derby Teaching Hospitals NHS Foundation Trust – for their work to adapt their services according to patient feedback.
-        </dd>
-    </dl>
-    <div class="page-break"></div>
-    <table class="contact-table">
-        <tbody>
+        Although the project is being offered to the Parkinson’s group - it is open to anyone so if you’d like to bring friends or family members along too that’s fine. The sessions will be taking place weekly on
+        <em>Mondays from 10.30 -12pm in the Aston Court Hotel</em>. The first session is <em>15 May</em>.
+        <br>
+        <table class="photo-wall">
             <tr>
                 <td>
-                    <div class="boxed">
-                        <dl>
-                            <dt>Parkinson's Awareness Week</dt>
-                            <dd>
-                                10-16 April
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Branch meetings </dt>
-                        </dl>
-                        <dl>
-                            <dt>Tai Chi demo </dt>
-                            <dd>
-                                Carol Gascoigne
-                                <em>2 May</em>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Lester Simpson </dt>
-                            <dd>6th June</dd>
-                        </dl>
-                    </div>
-                    <dl>
-                        <dd>
-                            From time to time you may see Annie Beighton taking photos for the newsletter and website, please let us know  IF YOU DO NOT WANT your photo to be used    - 01332 515700
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dd>
-                            The future of Attendance Allowance – a lifeline for people living with Parkinson’s – has been saved thanks to Parkinson’s UK campaigners in England.
-                            Result! Phil Reynolds, our Policy and Campaigns Adviser, explains “We sent our response to the consultation before Christmas. We met the minister in January to list our concerns. On 19 January, we found out Attendance Allowance would continue to be managed by central government.”
-
-                        </dd>
-                    </dl>
+                    <img class="photo-wall-photo apr-17-p3-p1" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/c50710e5-82b9-4565-b140-8fd852757a72.png">
                 </td>
                 <td>
-                   <h3>CONTACT DETAILS</h3>
-                    <dl>
-                        <dt>Chair Person</dt>
-                        <dd>
-                            Liz Greaves
-                            <br />
-                            01302 515700
-                        </dd>
-                    </dl>
-                    <br/><br/>
-                    <dl>
-                        <dt>Treasurer</dt>
-                        <dd>
-                            Lisa Collett
-                            <br/>
-                            07719711227
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Assistant Treasurer</dt>
-                        <dd>
-                            Megan Duguid
-                            <br/>
-                            07800 979303
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Newsletter distribution</dt>
-                        <dd>
-                            Shirley Lawson/Brian Greaves
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Membership Secretary</dt>
-                        <dd>
-                            Dorothy Allsop
-                            <br/>
-                            01332 735229
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Hydrotherapy Pool session–Contact</dt>
-                        <dd>
-                            01283 733536
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Carers Teas</dt>
-                        <dd>
-                            Jacqui Eastwood
-                            <br/>
-                            01332 831089
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>sQuad</dt>
-                        <dd>
-                            AnnPitt
-                            <br/>
-                            squadderby@gmail.com
-                        </dd>
-                    </dl>
-                    <h3>Other useful contacts</h3>
-                    <dl>
-                        <dt>Parkinson's Local Adviser</dt>
-                        <dd>
-                            Karen Bown
-                            <br/>
-                            0344 225 3629
-                            <br/>
-                            kbown@parkinsons.org.uk
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Branch & Volunteer Support Officer</dt>
-                        <dd>
-                            Lorraine Ray
-                            <br/>
-                            0344 225 9850
-                        </dd>
-                    </dl>
-                    <em class="highlight">
-                        Please send contributions for May issue by 12 April
-                    </em>
+                    <img class="photo-wall-photo apr-17-p3-p2" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/1d920eb9-b935-41dc-a25c-2316db45c183.png">
                 </td>
                 <td>
-                    <dl>
-                        <dt>Postal Corrospondance:</dt>
-                        <dd>
-                            <address>
-                                Parkinson’s UK<br/>
-                                Derby Branch<br/>
-                                210 Uttoxeter Rd<br/>
-                                DERBY<br/>
-                                DE3 9AB<br/>
-                            </address>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dt>Parkinson's Nurse Specialists</dt>
-                        <dd>
-                            Lisa Brown  & Suzanne Fillon
-                            <br />
-                            <em>01332 783535</em>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Amber Valley Support Group</dt>
-                        <dd>01773 718753</dd>
-                    </dl>
-                    <dl>
-                        <dt>Aston Court Hotel</dt>
-                        <dd>
-                            <address>
-                                Midland Rd DERBY DE1 2SL
-                            </address>
-                            <br/>
-                            01332 342716
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Derbyshire Carers Association</dt>
-                        <dd>
-                            01332  200002
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>Website Address</dt>
-                        <dd>
-                            <a href="http://derbyparkinsons.org.uk">derbyparkinsons.org.uk</a>
-                        </dd>
-                    </dl>
-                    <h3>More Information</h3>
-                    <dl>
-                        <dd>
-                            We’re the Parkinson’s support and research charity. Help us find a cure and improve life for everyone affected by Parkinson’s.
-                            Free* confidential helpline
-                            <br />
-                            <em>0808 800 0303</em>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dd>
-                            Monday to Friday 9am–8pm, Saturday 10am–2pm. Interpreting available. Textphone 0800 111 4204.
-                            <small>*calls are free from UK landlines and most mobile networks.</small>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dd>
-                            Visit us online at <a href="parkinsons.org.uk">parkinsons.org.uk</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dd>
-                            Drop us a line at <a href="mailto:hello@parkinsons.org.uk">hello@parkinsons.org.uk</a>
-                        </dd>
-                    </dl>
+                    <img class="photo-wall-photo apr-17-p3-p3" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/d8e4aa72-7767-43ef-b61f-aa8ec5dc8659.png">
+                </td>
+                <td>
+                    <img class="photo-wall-photo apr-17-p3-p4" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/7c60852d-3e64-4e67-b877-8edb6abd257b.png">
+                </td>
+                <td>
+                    <img class="photo-wall-photo apr-17-p3-p5" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/04bed625-8b56-4915-9f2c-d3ee6aa41479.png">
+                </td>
+                <td>
+                    <img class="photo-wall-photo apr-17-p3-p6" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/99bdb927-ff05-4efc-96cb-2f4ca90ada65.png">
+                </td>
+                <td>
+                    <img class="photo-wall-photo apr-17-p3-p7" src="https://gallery.mailchimp.com/f423cee63ccf530e9401d7ede/images/59cbc2f0-c8c2-48f4-b22e-77e76097da84.png">
                 </td>
             </tr>
-        </tbody>
-    </table>
-    <small>
-        Parkinson’s UK is the operating name
-        of the Parkinson’s Disease Society of the United Kingdom. A company limited by guarantee. Registered in England and Wales (00948776). Registered office: 215 Vauxhall Bridge Road, London, SW1V 1EJ. A charity registered in England and Wales (258197)
-        and in Scotland (SC037554).
-        © Parkinson’s UK, January 2010
-    </small>
+        </table>
+    </dd>
+</dl>
+<h3>Derby Shining Stars</h3>
+<dl>
+    <dd>
+        We’re delighted to announce the finalists for the UK Parkinson’s Excellence Network Awards – the Awards recognise and celebrate outstanding health and social care services that make a difference to people affected by Parkinson's.
+        The Excellence Network Awards ceremony was held 6 March, hosted by renowned journalist and broadcaster John Stapleton.
+        There were highly commended mentions for the Parkinson's Service at Derby Teaching Hospitals NHS Foundation Trust – for their work to adapt their services according to patient feedback.
+    </dd>
+</dl>
+<div class="page-break"></div>
+<table class="contact-table">
+    <tbody>
+    <tr>
+        <td>
+            <div class="boxed">
+                <dl>
+                    <dt>Parkinson's Awareness Week</dt>
+                    <dd>
+                        10th-16th April
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Branch meetings </dt>
+                </dl>
+                <dl>
+                    <dt>Tai Chi demo </dt>
+                    <dd>
+                        Carol Gascoigne
+                        <em>2 May</em>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Lester Simpson </dt>
+                    <dd>6th June</dd>
+                </dl>
+            </div>
+            <dl>
+                <dd>
+                    From time to time you may see Annie Beighton taking photos for the newsletter and website, please let us know  IF YOU DO NOT WANT your photo to be used    - 01332 515700
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    The future of Attendance Allowance – a lifeline for people living with Parkinson’s – has been saved thanks to Parkinson’s UK campaigners in England.
+                    Result! Phil Reynolds, our Policy and Campaigns Adviser, explains “We sent our response to the consultation before Christmas. We met the minister in January to list our concerns. On 19 January, we found out Attendance Allowance would continue to be managed by central government.”
+
+                </dd>
+            </dl>
+        </td>
+        <td>
+            <h3>CONTACT DETAILS</h3>
+            <dl>
+                <dt>Chair Person</dt>
+                <dd>
+                    Liz Greaves
+                    <br>
+                    01302 515700
+                </dd>
+            </dl>
+            <br><br>
+            <dl>
+                <dt>Treasurer</dt>
+                <dd>
+                    Lisa Collett
+                    <br>
+                    07719711227
+                </dd>
+            </dl>
+            <dl>
+                <dt>Assistant Treasurer</dt>
+                <dd>
+                    Megan Duguid
+                    <br>
+                    07800 979303
+                </dd>
+            </dl>
+            <dl>
+                <dt>Newsletter distribution</dt>
+                <dd>
+                    Shirley Lawson/Brian Greaves
+                </dd>
+            </dl>
+            <dl>
+                <dt>Membership Secretary</dt>
+                <dd>
+                    Dorothy Allsop
+                    <br>
+                    01332 735229
+                </dd>
+            </dl>
+            <dl>
+                <dt>Hydrotherapy Pool session–Contact</dt>
+                <dd>
+                    01283 733536
+                </dd>
+            </dl>
+            <dl>
+                <dt>Carers Teas</dt>
+                <dd>
+                    Jacqui Eastwood
+                    <br>
+                    01332 831089
+                </dd>
+            </dl>
+            <dl>
+                <dt>sQuad</dt>
+                <dd>
+                    AnnPitt
+                    <br>
+                    squadderby@gmail.com
+                </dd>
+            </dl>
+            <h3>Other useful contacts</h3>
+            <dl>
+                <dt>Parkinson's Local Adviser</dt>
+                <dd>
+                    Karen Bown
+                    <br>
+                    0344 225 3629
+                    <br>
+                    kbown@parkinsons.org.uk
+                </dd>
+            </dl>
+            <dl>
+                <dt>Branch & Volunteer Support Officer</dt>
+                <dd>
+                    Lorraine Ray
+                    <br>
+                    0344 225 9850
+                </dd>
+            </dl>
+            <em class="highlight">
+                Please send contributions for May issue by 12 April
+            </em>
+        </td>
+        <td>
+            <dl>
+                <dt>Postal Corrospondance:</dt>
+                <dd>
+                    <address>
+                        Parkinson’s UK<br>
+                        Derby Branch<br>
+                        210 Uttoxeter Rd<br>
+                        DERBY<br>
+                        DE3 9AB<br>
+                    </address>
+
+                </dd></dl>
+            <dl>
+                <dt>Parkinson's Nurse Specialists</dt>
+                <dd>
+                    Lisa Brown  & Suzanne Fillon
+                    <br>
+                    <em>01332 783535</em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>Amber Valley Support Group</dt>
+                <dd>01773 718753</dd>
+            </dl>
+            <dl>
+                <dt>Aston Court Hotel</dt>
+                <dd>
+                    <address>
+                        Midland Rd DERBY DE1 2SL
+                    </address>
+                    <br>
+                    01332 342716
+                </dd>
+            </dl>
+            <dl>
+                <dt>Derbyshire Carers Association</dt>
+                <dd>
+                    01332  200002
+                </dd>
+            </dl>
+            <dl>
+                <dt>Website Address</dt>
+                <dd>
+                    <a href="http://derbyparkinsons.org.uk">derbyparkinsons.org.uk</a>
+                </dd>
+            </dl>
+            <h3>More Information</h3>
+            <dl>
+                <dd>
+                    We’re the Parkinson’s support and research charity. Help us find a cure and improve life for everyone affected by Parkinson’s.
+                    Free* confidential helpline
+                    <br>
+                    <em>0808 800 0303</em>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    Monday to Friday 9am–8pm, Saturday 10am–2pm. Interpreting available. Textphone 0800 111 4204.
+                    <small>*calls are free from UK landlines and most mobile networks.</small>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    Visit us online at <a href="parkinsons.org.uk">parkinsons.org.uk</a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    Drop us a line at <a href="mailto:hello@parkinsons.org.uk">hello@parkinsons.org.uk</a>
+                </dd>
+            </dl>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<small>
+    Parkinson’s UK is the operating name
+    of the Parkinson’s Disease Society of the United Kingdom. A company limited by guarantee. Registered in England and Wales (00948776). Registered office: 215 Vauxhall Bridge Road, London, SW1V 1EJ. A charity registered in England and Wales (258197)
+    and in Scotland (SC037554).
+    © Parkinson’s UK, January 2010
+</small>
 </body>
 </html>
