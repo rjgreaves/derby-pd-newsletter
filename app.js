@@ -7,7 +7,14 @@ app.use(express.static(path.join(__dirname, 'assets')));
 
 app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/index.html`);
-})
+});
+app.get('/201704', (req, res) => {
+    res.sendFile(`${__dirname}/201704/index.html`);
+});
+app.get('/201705', (req, res) => {
+    res.sendFile(`${__dirname}/201705/index.html`);
+});
+
 var port = process.env.PORT || 8080;
 
 var server = app.listen(port, (req, res) => {
