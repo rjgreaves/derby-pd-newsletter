@@ -14,6 +14,9 @@ app.get('/201704', (req, res) => {
 app.get('/201705', (req, res) => {
     res.sendFile(`${__dirname}/201705/index.html`);
 });
+app.get('/201706', (req, res) => {
+    res.sendFile(`${__dirname}/201706/index.html`);
+});
 
 var port = process.env.PORT || 8080;
 
